@@ -24,7 +24,7 @@ class ShoppingActivity : AppCompatActivity(),KodeinAware {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shopping)
         supportActionBar?.title = "Shopping List"
-        
+
         val viewModel = ViewModelProviders.of(this,factory).get(ShoppingViewModel::class.java)
 
         val adapter = ShoppingAdapter(listOf(),viewModel)
